@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/209.49d210d4.chunk.js","mappings":"2JAQA,UARkB,WAChB,OACEA,EAAAA,EAAAA,KAAA,OAAAC,UACED,EAAAA,EAAAA,KAAA,MAAAC,SAAI,eAGV,C","sources":["pages/PhoneBook.js"],"sourcesContent":["const PhoneBook = () => {\n  return (\n    <div>\n      <h1>Phonebook</h1>\n    </div>\n  );\n};\n\nexport default PhoneBook;\n"],"names":["_jsx","children"],"sourceRoot":""}
