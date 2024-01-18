@@ -13,6 +13,8 @@ export const SectionHeader = styled.div`
   align-items: center;
   width: 50%;
   justify-content: space-between;
+  padding-top: 25px;
+  margin: 0 auto;
 `;
 
 export const List = styled.ul`

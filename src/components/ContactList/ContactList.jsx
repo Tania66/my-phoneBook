@@ -4,8 +4,6 @@ import { selectFilterContact } from '../../redux/contacts/selectors';
 import {  Button, ContactInner, ItemWrap, List, Name, Number, Section, SectionHeader } from './ContactList.styled';
 import { FcReddit } from "react-icons/fc";
 import { MdOutlineDeleteOutline } from "react-icons/md";
-import Filter from 'components/Filter/Filter';
-import ModalAdd from 'components/Modall/ModalAdd';
 
 const ContactList = () => {
   const contacts = useSelector(selectFilterContact);
@@ -17,11 +15,6 @@ const ContactList = () => {
 
   return (
     <Section>
-        <SectionHeader>
-           <Filter />
-             <ModalAdd/>   
-        </SectionHeader>
- 
     <List>  
       {contacts.map(contact => (
         <ItemWrap key={contact.id}>
@@ -38,7 +31,7 @@ const ContactList = () => {
         </ItemWrap>
       ))}
     </List>
-    </Section>
+    </Section> 
   );
 };
 

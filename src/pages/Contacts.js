@@ -8,6 +8,9 @@ import {
 } from '../redux/contacts/selectors';
 import ContactList from 'components/ContactList/ContactList';
 import Loader from 'components/Loader/Loader';
+import Filter from 'components/Filter/Filter';
+import ModalAdd from 'components/Modall/ModalAdd';
+import { SectionHeader } from 'components/ContactList/ContactList.styled';
 
 const Contacts = () => {
   const contacts = useSelector(getContact);
@@ -21,6 +24,10 @@ const Contacts = () => {
 
   return (
     <div>
+      <SectionHeader>
+        <Filter />
+        <ModalAdd />
+      </SectionHeader>
       {isLoading && <Loader />}
       {error && <p>❌ Something went wrong - {error}</p>}
       {contacts.length > 0 && <ContactList />}
