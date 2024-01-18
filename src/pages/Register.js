@@ -21,7 +21,7 @@ const Register = () => {
   return (
     <div>
       <h2>Register</h2>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} autoComplete="off">
         <label>
           <Input placeholder="Username" type="name" name="name" />
         </label>
@@ -29,7 +29,12 @@ const Register = () => {
           <Input placeholder="Email" type="email" name="email" />
         </label>
         <label>
-          <Input placeholder="Password" type="password" name="password" />
+          <Input
+            placeholder="Password"
+            type="password"
+            name="password"
+            autoComplete="off"
+          />
         </label>
         <Button type="submit">Register</Button>
       </Form>

@@ -20,12 +20,17 @@ const Login = () => {
   return (
     <div>
       <h2>Login</h2>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} autoComplete="off">
         <label>
           <Input placeholder="Email" type="email" name="email" />
         </label>
         <label>
-          <Input placeholder="Password" type="password" name="password" />
+          <Input
+            placeholder="Password"
+            type="password"
+            name="password"
+            autoComplete="off"
+          />
         </label>
         <Button type="submit">Login</Button>
       </Form>

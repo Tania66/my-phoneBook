@@ -6,10 +6,13 @@ export default function UserMenu() {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
 
+  const logOut = () => {
+    dispatch(logout());
+  };
   return (
     <div>
-      <p>{user}</p>
-      <button onClick={() => dispatch(logout())}>Logout</button>
+      <p>Welcome, {user.name}</p>
+      <button onClick={logOut}>Logout</button>
     </div>
   );
 }
