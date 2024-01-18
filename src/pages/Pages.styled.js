@@ -25,12 +25,3 @@ export const Button = styled.button`
   text-transform: uppercase;
   border: none;
 `;
-
-export const SectionHeader = styled.div`
-  display: flex;
-  align-items: center;
-  width: 50%;
-  justify-content: space-between;
-  padding-top: 25px;
-  margin: 0 auto;
-`;
