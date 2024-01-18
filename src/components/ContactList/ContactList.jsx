@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { deletedContact } from '../../redux/contacts/options';
 import { selectFilterContact } from '../../redux/contacts/selectors';
-import {  Button, ContactInner, ItemWrap, List, Name, Number, Section, SectionHeader } from './ContactList.styled';
+import {  Button, ContactInner, ItemWrap, List, Name, Number, Section} from './ContactList.styled';
 import { FcReddit } from "react-icons/fc";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 
