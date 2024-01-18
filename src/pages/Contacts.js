@@ -6,7 +6,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Loader from 'components/Loader/Loader';
 import Filter from 'components/Filter/Filter';
 import ModalAdd from 'components/Modall/ModalAdd';
-import { SectionHeader } from 'components/ContactList/ContactList.styled';
+import { SectionHeader } from './Pages.styled';
 
 const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);

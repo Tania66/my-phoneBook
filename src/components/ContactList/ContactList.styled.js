@@ -8,15 +8,6 @@ export const Section = styled.section`
   padding: 35px 0;
 `;
 
-export const SectionHeader = styled.div`
-  display: flex;
-  align-items: center;
-  width: 50%;
-  justify-content: space-between;
-  padding-top: 25px;
-  margin: 0 auto;
-`;
-
 export const List = styled.ul`
   list-style: none;
   display: flex;
