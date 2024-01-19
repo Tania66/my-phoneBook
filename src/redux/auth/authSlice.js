@@ -33,7 +33,7 @@ export const authSlice = createSlice({
       })
       .addCase(refreshCurrentUser.fulfilled, (state, action) => {
         state.user = action.payload;
-        state.isLoggedIn = true;
+        state.isLoginIn = true;
         state.isRefreshing = false;
       })
       .addCase(refreshCurrentUser.rejected, state => {
