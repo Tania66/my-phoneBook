@@ -1,12 +1,14 @@
-import { lazy} from "react";
+import { lazy, useEffect} from "react";
 import { Route, Routes } from 'react-router-dom';
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-import { Layout } from "./Layout";
+
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
 import { isRefreshing } from "../redux/auth/authSelector";
 import Loader from "./Loader/Loader";
+import { refreshCurrentUser } from "../redux/auth/authOperation";
+import { Layout } from "./Layout/Layout";
 
 
 
@@ -20,6 +22,12 @@ const Register = lazy(() => import("../pages/Register"));
 
 export const App = () => {
   const refreshing = useSelector(isRefreshing);
+  const dispatch = useDispatch();
+
+
+useEffect(()=>{
+  dispatch(refreshCurrentUser())
+},[dispatch]);
 
   return refreshing ? (<Loader/>) :(
 

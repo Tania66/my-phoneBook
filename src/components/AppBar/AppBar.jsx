@@ -12,8 +12,9 @@ export const AppBar = () => {
     <Header>
       <Logo>
         <MdContactPhone size={25} color="white" />
+        <Navigation />
       </Logo>
-      <Navigation />
+      
       {login ? <UserMenu /> : <AuthMenu />}
     </Header>
   );

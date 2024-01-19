@@ -6,6 +6,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Loader from 'components/Loader/Loader';
 import Filter from 'components/Filter/Filter';
 import ModalAdd from 'components/Modall/ModalAdd';
+import { Contact, ContactWrap } from './Pages.styled';
 
 const Contacts = () => {
   const isLoading = useSelector(selectIsLoading);
@@ -16,15 +17,15 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <div>
+    <Contact>
+      <ContactWrap>
         <Filter />
         <ModalAdd />
-      </div>
+      </ContactWrap>
 
       {isLoading && <Loader />}
       <ContactList />
-    </div>
+    </Contact>
   );
 };
 

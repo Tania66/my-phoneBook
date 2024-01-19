@@ -25,12 +25,7 @@ const Login = () => {
           <Input placeholder="Email" type="email" name="email" />
         </label>
         <label>
-          <Input
-            placeholder="Password"
-            type="password"
-            name="password"
-            autoComplete="off"
-          />
+          <Input placeholder="Password" type="password" name="password" />
         </label>
         <Button type="submit">Login</Button>
       </Form>

@@ -25,3 +25,15 @@ export const Button = styled.button`
   text-transform: uppercase;
   border: none;
 `;
+
+export const Contact = styled.div`
+  padding-top: 16px;
+`;
+
+export const ContactWrap = styled.div`
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+`;

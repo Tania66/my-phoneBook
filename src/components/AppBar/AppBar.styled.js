@@ -16,7 +16,11 @@ export const Header = styled.header`
   background: #7e8fdd;
 `;
 
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
 
 export const Nav = styled.nav`
   display: flex;
