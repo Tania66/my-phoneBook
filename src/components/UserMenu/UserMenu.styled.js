@@ -13,6 +13,10 @@ export const UserName = styled.p`
   font-weight: 600;
 `;
 
+export const Image = styled.img`
+  border-radius: 50%;
+`;
+
 export const ButtonLogout = styled.button`
   border-radius: 8px;
   background: transparent;

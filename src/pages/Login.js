@@ -1,9 +1,19 @@
 import { useDispatch } from 'react-redux';
-import { Button, Form, Input } from './Pages.styled';
+import {
+  Button,
+  CreateAcc,
+  Form,
+  Input,
+  LogIn,
+  LoginContainer,
+  LoginText,
+} from './Pages.styled';
 import { login } from '../redux/auth/authOperation';
+import loginImg from './login.png';
 
 const Login = () => {
   const dispatch = useDispatch();
+  const image = loginImg;
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -18,18 +28,24 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <Form onSubmit={handleSubmit} autoComplete="off">
-        <label>
-          <Input placeholder="Email" type="email" name="email" />
-        </label>
-        <label>
-          <Input placeholder="Password" type="password" name="password" />
-        </label>
-        <Button type="submit">Login</Button>
-      </Form>
-    </div>
+    <LogIn>
+      <img src={image} alt="women-login" width={425} />
+      <LoginContainer>
+        <Form onSubmit={handleSubmit} autoComplete="off">
+          <label>
+            <Input placeholder="Email" type="email" name="email" />
+          </label>
+          <label>
+            <Input placeholder="Password" type="password" name="password" />
+          </label>
+          <Button type="submit">Login</Button>
+          <LoginText>
+            Don't have an account?
+            <CreateAcc to="/register"> Sing up</CreateAcc>
+          </LoginText>
+        </Form>
+      </LoginContainer>
+    </LogIn>
   );
 };
 

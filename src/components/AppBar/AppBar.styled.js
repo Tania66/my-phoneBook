@@ -12,8 +12,9 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 18px 24px;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 10px 10px;
   background: #7e8fdd;
+  box-shadow: 0px 6px 16px 0px rgba(46, 74, 117, 0.44);
 `;
 
 export const Logo = styled.div`
