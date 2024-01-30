@@ -26,6 +26,13 @@ export const MainTitle = styled.h1`
   -webkit-text-stroke: 2px #7e8fdd;
   font-weight: 900;
   font-size: 50px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    -webkit-text-stroke: 1.5px #7e8fdd;
+    font-size: 40px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const GetStared = styled(NavLink)`
@@ -38,6 +45,26 @@ export const GetStared = styled(NavLink)`
   font-size: 24px;
   font-weight: 900;
   margin-bottom: 25px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 12px 22px;
+    font-size: 22px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+`;
+
+export const HomeImg = styled.img`
+  width: 100%;
+  margin-bottom: 25px;
+  @media (min-width: 420px) and (max-width: 768px) {
+    width: 405px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    width: 405px;
+    height: 315px;
+  }
 `;
 
 /****LOGIN*******************/
@@ -49,6 +76,13 @@ export const LogIn = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
+`;
+
+export const LoginImg = styled.img`
+  width: 425px;
+  @media (min-width: 320px) and (max-width: 440px) {
+    width: 100%;
+  }
 `;
 
 export const LoginContainer = styled.div`
@@ -68,6 +102,13 @@ export const Input = styled.input`
   border: 2px solid #7e8fdd;
   padding: 12px 0 12px 20px;
   width: 300px;
+
+  @media (min-width: 320px) and (max-width: 500px) {
+    width: 208px;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    width: 225px;
+  }
 `;
 
 export const Button = styled.button`
@@ -81,6 +122,10 @@ export const Button = styled.button`
   border: none;
   width: 100%;
   cursor: pointer;
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
 `;
 
 export const LoginText = styled.p`
@@ -88,6 +133,9 @@ export const LoginText = styled.p`
   color: rgba(17, 17, 17, 0.5);
   font-size: 16px;
   font-weight: 400;
+  @media (min-width: 320px) and (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const CreateAcc = styled(NavLink)`
@@ -100,20 +148,41 @@ export const CreateAcc = styled(NavLink)`
 ///***REGISTER*******//
 
 export const SingUp = styled.div`
-  padding: 30px 24px 0 24px;
+  padding: 30px 24px 20px 24px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media (min-width: 320px) and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const RegisterImg = styled.div`
   background: rgba(126, 143, 221, 0.4);
   border-radius: 20px 0px 0px 20px;
+  @media (min-width: 320px) and (max-width: 600px) {
+    border-radius: 20px 20px 0 0;
+  }
+`;
+
+export const RegImg = styled.img`
+  width: 425px;
+  @media (min-width: 320px) and (max-width: 500px) {
+    width: 100%;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    width: 305px;
+  }
 `;
 
 export const RegisterContainer = styled.div`
-  padding: 25px 0;
+  width: 425px;
+  @media (min-width: 320px) and (max-width: 500px) {
+    width: 100%;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    width: 305px;
+  }
 `;
 
 export const RegForm = styled.form`
@@ -125,11 +194,21 @@ export const RegForm = styled.form`
   border-radius: 0px 20px 20px 0px;
   background: #f3f3f3;
   padding: 25px;
-  height: 379px;
+  height: 378px;
+
+  @media (min-width: 320px) and (max-width: 600px) {
+    border-radius: 20px;
+    height: auto;
+    border-radius: 0 0 20px 20px;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    height: 258px;
+    gap: 15px;
+  }
 `;
 
 export const Contact = styled.div`
-  padding: 30px 24px 0 24px;
+  padding: 30px 24px 20px 24px;
 `;
 
 export const ContactWrap = styled.div`
@@ -137,5 +216,10 @@ export const ContactWrap = styled.div`
   align-items: center;
   width: 50%;
   justify-content: space-between;
+  gap: 10px;
   margin: 0 auto;
+
+  @media (min-width: 320px) and (max-width: 540px) {
+    width: 100%;
+  }
 `;

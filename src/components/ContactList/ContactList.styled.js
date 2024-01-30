@@ -17,6 +17,9 @@ export const List = styled.ul`
   width: 50%;
   margin: 16px auto;
   padding: 0;
+  @media (min-width: 320px) and (max-width: 540px) {
+    width: 100%;
+  }
 `;
 
 export const ItemWrap = styled.li`
@@ -37,6 +40,10 @@ export const Name = styled.p`
   color: #000;
   font-size: 15px;
   font-weight: 700;
+  text-transform: uppercase;
+  @media (min-width: 320px) and (max-width: 540px) {
+    font-size: 13px;
+  }
 `;
 
 export const Number = styled.p`
@@ -45,6 +52,10 @@ export const Number = styled.p`
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
+  @media (min-width: 320px) and (max-width: 540px) {
+    font-size: 12px;
+    font-weight: 600;
+  }
 `;
 
 export const Button = styled.button`

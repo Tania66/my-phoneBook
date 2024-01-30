@@ -1,6 +1,7 @@
 import {
   GetStared,
   HomeContainer,
+  HomeImg,
   HomeInfo,
   MainTitle,
   Span,
@@ -12,14 +13,14 @@ const Home = () => {
 
   return (
     <HomeContainer>
+      <HomeImg src={homeImg} alt="phonebook" />
       <HomeInfo>
         <MainTitle>
           Welcome to your <Span>Phonebook</Span>
         </MainTitle>
+
         <GetStared to="/login">Get Stared</GetStared>
       </HomeInfo>
-
-      <img src={homeImg} width={425} alt="phonebook" />
     </HomeContainer>
   );
 };

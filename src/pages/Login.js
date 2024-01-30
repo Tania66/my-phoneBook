@@ -6,6 +6,7 @@ import {
   Input,
   LogIn,
   LoginContainer,
+  LoginImg,
   LoginText,
 } from './Pages.styled';
 import { login } from '../redux/auth/authOperation';
@@ -29,7 +30,7 @@ const Login = () => {
 
   return (
     <LogIn>
-      <img src={image} alt="women-login" width={425} />
+      <LoginImg src={image} alt="women-login" />
       <LoginContainer>
         <Form onSubmit={handleSubmit} autoComplete="off">
           <label>

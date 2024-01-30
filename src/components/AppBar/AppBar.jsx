@@ -1,4 +1,4 @@
-import { Header, Logo } from './AppBar.styled';
+import { Header, Img, Logo } from './AppBar.styled';
 import Navigation from 'components/Navigation';
 import UserMenu from 'components/UserMenu/UserMenu';
 import AuthMenu from 'components/AuthMenu';
@@ -12,7 +12,7 @@ export const AppBar = () => {
   return (
     <Header>
       <Logo>
-<img src={avatar} alt='phonebook' width={30} height={30}/>
+<Img src={avatar} alt='phonebook'/>
         <Navigation />
       </Logo>
       

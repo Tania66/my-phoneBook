@@ -16,7 +16,7 @@ export default function UserMenu() {
 
   return (
     <UserContainer>
-      <Image src={avatar} alt="avatar" width={35} />
+      <Image src={avatar} alt="avatar" />
       <UserName>Hello, {user.name}</UserName>
       <ButtonLogout onClick={() => dispatch(logout())}>Logout</ButtonLogout>
     </UserContainer>

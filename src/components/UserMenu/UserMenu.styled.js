@@ -11,10 +11,27 @@ export const UserName = styled.p`
   color: #fdfdff;
   font-size: 20px;
   font-weight: 600;
+  @media (min-width: 320px) and (max-width: 450px) {
+    display: none;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 15px;
+    font-weight: 500;
+  }
 `;
 
 export const Image = styled.img`
   border-radius: 50%;
+  width: 35px;
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 25px;
+  }
+  @media (min-width: 320px) and (max-width: 400px) {
+    display: none;
+  }
+  @media (min-width: 400px) {
+    display: block;
+  }
 `;
 
 export const ButtonLogout = styled.button`
@@ -26,4 +43,10 @@ export const ButtonLogout = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 15px;
+    padding: 5px 12px;
+    border: 2px solid #9cdfdf;
+    font-weight: 500;
+  }
 `;

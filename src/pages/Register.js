@@ -5,6 +5,7 @@ import {
   Input,
   LoginText,
   RegForm,
+  RegImg,
   RegisterContainer,
   RegisterImg,
   SingUp,
@@ -32,7 +33,7 @@ const Register = () => {
   return (
     <SingUp>
       <RegisterImg>
-        <img src={registerImg} alt="girl" width={425} />
+        <RegImg src={registerImg} alt="girl" />
       </RegisterImg>
       <RegisterContainer>
         <RegForm onSubmit={handleSubmit} autoComplete="off">
