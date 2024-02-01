@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,6 +42,9 @@ export const Logo = styled.div`
 export const Nav = styled.nav`
   display: flex;
   gap: 12px;
+  @media (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Link = styled(NavLink)`

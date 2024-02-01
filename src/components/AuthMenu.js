@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from './AppBar/AppBar.styled';
+import { Link, Nav } from './AppBar/AppBar.styled';
 
 export default function AuthMenu() {
   return (
-    <div>
+    <Nav>
       <Link to="/register">Register</Link>
       <Link to="/login">Login</Link>
-    </div>
+    </Nav>
   );
 }

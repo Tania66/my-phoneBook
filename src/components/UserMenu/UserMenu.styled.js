@@ -4,6 +4,9 @@ export const UserContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  @media (min-width: 320px) and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const UserName = styled.p`
@@ -11,10 +14,7 @@ export const UserName = styled.p`
   color: #fdfdff;
   font-size: 20px;
   font-weight: 600;
-  @media (min-width: 320px) and (max-width: 450px) {
-    display: none;
-  }
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 600px) and (max-width: 768px) {
     font-size: 15px;
     font-weight: 500;
   }
@@ -23,14 +23,8 @@ export const UserName = styled.p`
 export const Image = styled.img`
   border-radius: 50%;
   width: 35px;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 600px) and (max-width: 768px) {
     width: 25px;
-  }
-  @media (min-width: 320px) and (max-width: 400px) {
-    display: none;
-  }
-  @media (min-width: 400px) {
-    display: block;
   }
 `;
 

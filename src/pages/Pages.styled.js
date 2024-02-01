@@ -223,3 +223,40 @@ export const ContactWrap = styled.div`
     width: 100%;
   }
 `;
+
+export const WrapContactImg = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 35px 0 35px 0;
+`;
+
+export const ContactImg = styled.img`
+  width: 200px;
+  margin-bottom: 25px;
+`;
+
+export const ContactImgText = styled.p`
+  color: #242424;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  @media (min-width: 320px) and (max-width: 500px) {
+    font-size: 22px;
+    text-align: center;
+    width: 250px;
+  }
+`;
+
+export const ContactSpanText = styled.span`
+  color: #7e8fdd;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  @media (min-width: 320px) and (max-width: 500px) {
+    font-size: 22px;
+  }
+`;
