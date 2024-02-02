@@ -9,6 +9,7 @@ import BurgerMenu from 'components/BurgerMenu/MobileMenu';
 
 
 
+
 export const AppBar = () => {
   const login = useSelector(isLogin);
   const avatar = defaultAvatar;
@@ -21,7 +22,7 @@ export const AppBar = () => {
       </Logo>     
       {login ? <UserMenu /> : <AuthMenu />}
 
-<BurgerMenu/>
+<BurgerMenu />
 
     </Header>
   );
